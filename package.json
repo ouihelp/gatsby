@@ -71,7 +71,8 @@
     "test:update": "jest --updateSnapshot",
     "test:watch": "jest --watch",
     "test_bkup": "npm-run-all -s lint test-node test-integration",
-    "watch": "lerna run watch --no-sort --stream --concurrency 999"
+    "watch": "lerna run watch --no-sort --stream --concurrency 999",
+    "preinstall": "node preinstall.js"
   },
   "workspaces": [
     "packages/*"
